@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- <div class="header">
+        <div class="container">
+            <a href="#" class="logo">Sanat</a>
+            <div class="links">
+                <span class="icon">
+                    <span></span><span></span><span></span>
+                </span>
+                <ul>
+                    <li class="#services"><a href="">services</a></li>
+                    <li class="#portfolio"><a href="">portfolio</a></li>
+                    <li class="#about"><a href="">about</a></li>
+                    <li class="#contact"><a href="">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+    <button id="menu-toggle">Toggle Menu</button>
+    <nav id="menu">
+    <ul>
+        <li><a href="#">Menu Item 1</a></li>
+        <li><a href="#">Menu Item 2</a></li>
+        <li><a href="#">Menu Item 3</a></li>
+    </ul>
+    </nav>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        let menuVisible = false;
+
+        menuToggle.addEventListener('click', () => {
+        menuVisible =!menuVisible;
+        menu.classList.toggle('show', menuVisible);
+        });
+
+        menu.addEventListener('mouseleave', () => {
+        if (menuVisible) {
+            menuVisible = false;
+            menu.classList.remove('show');
+        }
+});
+    </script>
+</body>
+</html>
