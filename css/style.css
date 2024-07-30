@@ -529,7 +529,7 @@ body {
     padding: 30px 10px;
     text-align: center;
     font-size: 18px;
-    background: linear-gradient(to top, var(--main-color) -40%, #000000 100%);
+    background-color: black;
 }
 
 .footer span {
